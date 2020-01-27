@@ -1,4 +1,5 @@
-This is a basic create, read, update, delete (CRUD) operations example in Node.js (Express.js) and MySQL.
+# A simple CRUD application with Node.js (Express), MySQL. 
+This is a basic create, read, update, delete (CRUD) operations example in Node.js (Express) and MySQL.
 
 # Installation
 Clone or download zip to your machine then hit this:
