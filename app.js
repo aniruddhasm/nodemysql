@@ -9,6 +9,7 @@ const logger = require('morgan')
 const helmet = require('helmet')
 const mysql = require('mysql')
 const myConnection = require('express-myconnection')
+require('dotenv').config({ path: './env/.env' })
 
 app.use(bodyParser.urlencoded({ extended: false }))
   .use(logger('dev'))
@@ -17,11 +18,11 @@ app.use(bodyParser.urlencoded({ extended: false }))
   .use(bodyParser.json())
 
 app.use(myConnection(mysql, {
-  host: '',
-  user: '',
-  password: '',
+  host: process.env.DB_HOST,
+  user: process.env.DB_USERNAME,
+  password: process.env.DB_PASSWORD,
   port: 3306,
-  database: ''
+  database: process.env.DB_DATABASE
 }, 'single'))
 
 app.use(express.urlencoded({ extended: false }))
