@@ -9,14 +9,15 @@ npm install
 
 # Database configuration
 * Create a database with name: crudnodejsmysql and import customer.sql file in mysql
-* Change the credentials in app.js file.
+* Create a env folder at root location.
+* Inside env create a file name- .env and add the db credentials
 
 ```
-host: 'localhost',
-user: '',
-password: '',
-port: 3306, // mysql port
-database: 'crudnodejsmysql'
+DB_HOST=
+DB_USERNAME=
+DB_PASSWORD=
+DB_PORT=3306 #mysql port
+DB_DATABASE=crudnodejsmysql
 ```
 
 # Run the project
