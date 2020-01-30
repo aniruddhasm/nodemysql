@@ -10,7 +10,8 @@ npm install
 # Database configuration
 * Create a database with name: crudnodejsmysql and import customer.sql file in mysql
 * Create a env folder at root location.
-* Inside env create a file name- .env and add the db credentials
+* Inside env create a file name- .env For eg : env/.env 
+* Add the db credentials
 
 ```
 DB_HOST=
