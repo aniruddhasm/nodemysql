@@ -3,7 +3,7 @@ This is a basic create, read, update, delete (CRUD) operations example in Node.j
 
 # Installation
 Clone or download zip to your machine then hit this:
-```
+```javascript
 npm install
 ```
 
@@ -13,15 +13,15 @@ npm install
 * Inside env folder create a file name- <strong>.env</strong>   For eg : <strong>env/.env</strong>
 * Add the db credentials
 
-```
+```javascript
 DB_HOST=
 DB_USERNAME=
 DB_PASSWORD=
-DB_PORT=3306 #mysql port
+DB_PORT=3306                  #mysql port
 DB_DATABASE=crudnodejsmysql
 ```
 
 # Run the project
-```
+```javascript
 node app.js
 ```
